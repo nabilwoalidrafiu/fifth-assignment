@@ -4,19 +4,15 @@ const matchingFood = food => {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            // console.log(data.meals);
             showFood(data.meals);
         })
-    // console.log(url);
 }
 
 
 const showFood = meals => {
     const foodsDiv = document.getElementById("foodItem");
     foodsDiv.innerHTML = "";
-    // const foodDiv = document.createElement("div");
     meals.forEach(meal => {
-        // const meal = meals[i]; 
         const foodDiv = document.createElement("div");
         foodDiv.className = "foodDiv"
         const foodInfo = `
@@ -34,14 +30,10 @@ const foodsDetails = foods => {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            // console.log(data.meals[0])
             renderfoodInfo(data.meals)
         })
-    // const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${foods}`
-    // console.log(url);
 }
 const renderfoodInfo = meals => {
-    // console.log("meals");
     const meal = meals[0];
     const foodinfoDiv = document.getElementById("foodinfoDiv")
     foodinfoDiv.innerHTML = `
