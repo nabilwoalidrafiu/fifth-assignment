@@ -47,5 +47,11 @@ const renderfoodInfo = meals => {
         <p>${meal.strMeasure5} ${meal.strIngredient5}</p>
         <p>${meal.strMeasure6} ${meal.strIngredient6}</p>
     `
+    displayNone();
+    
+}
+const displayNone = () =>{
     document.getElementById("foodItem").style.display = "none";
+    document.getElementById("searchBox").style.display = "none";
+    document.getElementById("search").style.display = "none";
 }
