@@ -40,12 +40,16 @@ const renderfoodInfo = meals => {
         <img src="${meal.strMealThumb}">
         <h2>${meal.strMeal}</h2>
         <h5>Ingredients</h5>
-        <p>${meal.strMeasure1} ${meal.strIngredient1}</p>
-        <p>${meal.strMeasure2} ${meal.strIngredient2}</p>
-        <p>${meal.strMeasure3} ${meal.strIngredient3}</p>
-        <p>${meal.strMeasure4} ${meal.strIngredient4}</p>
-        <p>${meal.strMeasure5} ${meal.strIngredient5}</p>
-        <p>${meal.strMeasure6} ${meal.strIngredient6}</p>
+        <ul>
+            <li>${meal.strMeasure1} ${meal.strIngredient1}</li>
+            <li>${meal.strMeasure2} ${meal.strIngredient2}</li>
+            <li>${meal.strMeasure3} ${meal.strIngredient3}</li>
+            <li>${meal.strMeasure4} ${meal.strIngredient4}</li>
+            <li>${meal.strMeasure5} ${meal.strIngredient5}</li>
+            <li>${meal.strMeasure6} ${meal.strIngredient6}</li>
+            <li>${meal.strMeasure7} ${meal.strIngredient7}</li>
+        </ul>
+        
     `
     displayNone();
     

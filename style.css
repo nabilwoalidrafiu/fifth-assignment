@@ -1,3 +1,6 @@
+body {
+    background-color: rgb(21, 196, 240);
+}
 #foodItem {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -21,7 +24,7 @@
 }
 
 .foodDiv h3 {
-    color: blue;
+    
 }
 
 #foodInfoDiv {
@@ -34,4 +37,7 @@
 #foodinfoDiv img {
     width: 400px;
     height: 300px;
+}
+ul li {
+    list-style-type: none;
 }
