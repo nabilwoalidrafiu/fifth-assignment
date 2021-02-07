@@ -26,7 +26,6 @@ const showFood = meals => {
             <img id="mealImage" src="${meal.strMealThumb}">
             <h4>${meal.strMeal}</h4>
         </div>
-        
         `
         foodDiv.innerHTML = foodInfo;
         foodsDiv.appendChild(foodDiv);
@@ -54,16 +53,15 @@ const renderfoodInfo = meals => {
             <h1>${meal.strMeal}</h1>
             <h5>Ingredients:</h5>
             <ul>
-                <li>&#x2714; ${meal.strMeasure1} ${meal.strIngredient1}</li>
-                <li>&#x2714; ${meal.strMeasure2} ${meal.strIngredient2}</li>
-                <li>&#x2714; ${meal.strMeasure3} ${meal.strIngredient3}</li>
-                <li>&#x2714; ${meal.strMeasure4} ${meal.strIngredient4}</li>
-                <li>&#x2714; ${meal.strMeasure5} ${meal.strIngredient5}</li>
-                <li>&#x2714; ${meal.strMeasure6} ${meal.strIngredient6}</li>
+                <li>${meal.strMeasure1} ${meal.strIngredient1}</li>
+                <li>${meal.strMeasure2} ${meal.strIngredient2}</li>
+                <li>${meal.strMeasure3} ${meal.strIngredient3}</li>
+                <li>${meal.strMeasure4} ${meal.strIngredient4}</li>
+                <li>${meal.strMeasure5} ${meal.strIngredient5}</li>
+                <li>${meal.strMeasure6} ${meal.strIngredient6}</li>
             </ul>
         </div>
-        
-    `
+         `
     displayNone();
 
 }
