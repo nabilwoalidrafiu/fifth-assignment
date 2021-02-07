@@ -38,17 +38,18 @@ const renderfoodInfo = meals => {
     const foodinfoDiv = document.getElementById("foodinfoDiv")
     foodinfoDiv.innerHTML = `
         <img src="${meal.strMealThumb}">
-        <h2>${meal.strMeal}</h2>
-        <h5>Ingredients</h5>
-        <ul>
-            <li>${meal.strMeasure1} ${meal.strIngredient1}</li>
-            <li>${meal.strMeasure2} ${meal.strIngredient2}</li>
-            <li>${meal.strMeasure3} ${meal.strIngredient3}</li>
-            <li>${meal.strMeasure4} ${meal.strIngredient4}</li>
-            <li>${meal.strMeasure5} ${meal.strIngredient5}</li>
-            <li>${meal.strMeasure6} ${meal.strIngredient6}</li>
-            <li>${meal.strMeasure7} ${meal.strIngredient7}</li>
-        </ul>
+        <div>
+            <h1>${meal.strMeal}</h1>
+            <h5>Ingredients:</h5>
+            <ul>
+                <li>&#x2714; ${meal.strMeasure1} ${meal.strIngredient1}</li>
+                <li>&#x2714; ${meal.strMeasure2} ${meal.strIngredient2}</li>
+                <li>&#x2714; ${meal.strMeasure3} ${meal.strIngredient3}</li>
+                <li>&#x2714; ${meal.strMeasure4} ${meal.strIngredient4}</li>
+                <li>&#x2714; ${meal.strMeasure5} ${meal.strIngredient5}</li>
+                <li>&#x2714; ${meal.strMeasure6} ${meal.strIngredient6}</li>
+            </ul>
+        </div>
         
     `
     displayNone();
