@@ -10,8 +10,6 @@ const matchingFood = food => {
             errorText.innerText = "";
         })
         .catch((error) => {
-            // const errorText = document.getElementById("error-text");
-            
             errorText.innerText = "Sorry! Not found this food";
         })
 }
