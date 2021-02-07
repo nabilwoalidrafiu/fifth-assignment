@@ -1,7 +1,8 @@
 body {
-    background-color: rgb(21, 196, 240);
+    background-color: rgb(150, 204, 218);
 }
 
+/* show searched food items  */
 #foodItem {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -15,19 +16,17 @@ body {
     text-align: center;
     margin: 0 auto;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .foodDiv img {
     width: 100%;
     height: 250px;
     border-radius: 10px 10px 0px 0px;
-    cursor: pointer;
+    
 }
 
-.foodDiv h3 {}
-
-section {}
-
+/* details information for single food */
 #foodInfoDiv {
     height: 800px;
     width: 600px;

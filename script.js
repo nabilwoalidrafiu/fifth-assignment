@@ -1,10 +1,18 @@
+//  show searched food items 
 const matchingFood = food => {
     const foodName = document.getElementById("searchBox").value
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${foodName}`
+    const errorText = document.getElementById("error-text");
     fetch(url)
         .then(response => response.json())
         .then(data => {
             showFood(data.meals);
+            errorText.innerText = "";
+        })
+        .catch((error) => {
+            // const errorText = document.getElementById("error-text");
+            
+            errorText.innerText = "Sorry! Not found this food";
         })
 }
 
@@ -16,15 +24,20 @@ const showFood = meals => {
         const foodDiv = document.createElement("div");
         foodDiv.className = "foodDiv"
         const foodInfo = `
-        <img onclick="foodsDetails('${meal.strMeal}')" id="mealImage" src="${meal.strMealThumb}">
-        <h3>${meal.strMeal}</h3>
+        <div onclick="foodsDetails('${meal.strMeal}')">
+            <img id="mealImage" src="${meal.strMealThumb}">
+            <h4>${meal.strMeal}</h4>
+        </div>
+        
         `
         foodDiv.innerHTML = foodInfo;
         foodsDiv.appendChild(foodDiv);
     });
-  
+
 }
 
+
+// details information for single food
 const foodsDetails = foods => {
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${foods}`
     fetch(url)
@@ -33,6 +46,7 @@ const foodsDetails = foods => {
             renderfoodInfo(data.meals)
         })
 }
+
 const renderfoodInfo = meals => {
     const meal = meals[0];
     const foodinfoDiv = document.getElementById("foodinfoDiv")
@@ -53,9 +67,9 @@ const renderfoodInfo = meals => {
         
     `
     displayNone();
-    
+
 }
-const displayNone = () =>{
+const displayNone = () => {
     document.getElementById("foodItem").style.display = "none";
     document.getElementById("searchBox").style.display = "none";
     document.getElementById("search").style.display = "none";
