@@ -7,7 +7,6 @@ searchBtn.addEventListener('click', () => {
         matchingFood();
         errorText.innerText = "";
     } else {
-        console.log("no input");
         errorText.innerText = "Please search Food Name";
     }
 })
