@@ -2,13 +2,11 @@
 const searchBtn = document.getElementById("search");
 searchBtn.addEventListener('click', () => {
     const foodName = document.getElementById("searchBox").value;
-    const errorText = document.getElementById("error-text");
+    const errorTextInput = document.getElementById("error-text-input");
     if (foodName.length > 0) {
         matchingFood();
-        errorText.innerText = "";
-    } else {
-        errorText.innerText = "Please search Food Name";
-    }
+    } 
+    document.getElementById("search-box").value = "";
 })
 
 const matchingFood = food => {
