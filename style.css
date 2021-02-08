@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(150, 204, 218);
+    background-color: rgb(238, 246, 248);
 }
 
 /* show searched food items  */
@@ -10,7 +10,7 @@ body {
 }
 
 .foodDiv {
-    background-color: lightblue;
+    background-color: rgb(248, 248, 248);
     width: 300px;
     height: 320px;
     text-align: center;
@@ -29,15 +29,18 @@ body {
 
 /* details information for single food */
 #foodinfoDiv {
-    height: 600px;
-    width: 600px;
-    
+    height: 700px;
+    width: 500px;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px grey;
+    background-color: rgb(248, 248, 248);
 }
 
 #foodinfoDiv img {
-    width: 400px;
-    height: 300px;
-    border-radius: 10px 10px 10px 10px;
+    width: 500px;
+    height: 350px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 ul li {

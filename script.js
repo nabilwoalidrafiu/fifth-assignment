@@ -67,7 +67,7 @@ const renderfoodInfo = meals => {
         </div>
          `
     displayNone();
-
+    document.getElementById("foodinfoDiv").style.display = "block";
 }
 const displayNone = () => {
     document.getElementById("foodItem").style.display = "none";
