@@ -1,4 +1,17 @@
 //  show searched food items 
+const searchBtn = document.getElementById("search");
+searchBtn.addEventListener('click', () => {
+    const foodName = document.getElementById("searchBox").value;
+    const errorText = document.getElementById("error-text");
+    if (foodName.length > 0) {
+        matchingFood();
+        errorText.innerText = "";
+    } else {
+        console.log("no input");
+        errorText.innerText = "Please search Food Name";
+    }
+})
+
 const matchingFood = food => {
     const foodName = document.getElementById("searchBox").value
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${foodName}`
