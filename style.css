@@ -16,6 +16,7 @@ body {
     text-align: center;
     margin: 0 auto;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px ;
     cursor: pointer;
 }
 
@@ -27,16 +28,16 @@ body {
 }
 
 /* details information for single food */
-#foodInfoDiv {
-    height: 800px;
+#foodinfoDiv {
+    height: 600px;
     width: 600px;
-    background-color: rgb(150, 140, 140);
     
 }
 
 #foodinfoDiv img {
     width: 400px;
     height: 300px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 ul li {

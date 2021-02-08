@@ -46,7 +46,7 @@ const foodsDetails = foods => {
 
 const renderfoodInfo = meals => {
     const meal = meals[0];
-    const foodinfoDiv = document.getElementById("foodinfoDiv")
+    const foodinfoDiv = document.getElementById("foodinfoDiv");
     foodinfoDiv.innerHTML = `
         <img src="${meal.strMealThumb}">
         <div>
